@@ -10,6 +10,7 @@ function App() {
     <Routes>
       <Route path="/" element={ <MainPage />}></Route>
       <Route path="/book/:id" element={<BookPage />}></Route>
+      <Route path="*" element={<MainPage />} />
     </Routes> 
     </main>
   )
