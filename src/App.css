@@ -1,0 +1,271 @@
+
+#headerComponent{
+  background-image: url('/img/backgroundHeader.jpg');
+  background-size:cover;
+  height: 500px;
+}
+
+#wrapperHeader{
+  width: 80%;
+  margin:0 auto;
+  padding-top:75px;
+}
+
+#wrapperHeader h1{
+  text-align: center;
+  color:white;
+  font-size: 50px;
+}
+#mainBlock{
+  width: 80%;
+  margin: 0 auto;
+}
+#wrapperInputsBlock{
+  width: 90%;
+  margin: 50px auto;
+ 
+}
+
+
+#wrapperInputsBlock #mainSercInput{
+width: 80%;
+height: 40px;
+font-size: 24px;
+margin: 0 auto;
+padding-left: 2%;
+}
+#wrapperInputsBlock #mainSercInput :active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+#wrapperInputsBlock #mainBlock{
+display: flex;
+align-items: center;
+}
+#wrapperInputsBlock #mainBlock button{
+  width: 20%;
+  height: 40px;
+  border:none;
+}
+#filtersBlock{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.filterBlock{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+width: 320px;
+}
+
+.filterBlock p {
+  color:white;
+  font-size: 24px;
+  width: 50%;
+}
+.filterBlock select{
+  margin-left: 2%;
+  font-size: 24px;
+  width: 90%;
+  height: 40px;
+}
+#countResults{
+  margin: 0% auto;
+  width: 80%;
+  margin-top: 2%;
+}
+#countResults h2{
+  text-align:center;
+}
+#wrapperListBooks{
+width: 90%;
+margin: 0 auto;
+padding-top: 2%;
+}
+#wrapperListBooks #ListBooks{
+display: flex;
+flex-wrap: wrap;
+gap: 3%;
+width: 100%;
+}
+.link{
+  color:inherit;
+  text-decoration:none;
+  width: 20%;
+  min-width: 250px;
+  height: 400px;
+  padding: 1%;
+  margin-top: 2%;
+}
+
+.OneBook{
+  width: 20%;
+  min-width: 250px;
+  height: 400px;
+  padding: 1%;
+  margin-top: 2%;
+}
+.OneBook_img{
+  width: 125px;
+  height: 205px;
+  margin: 0 auto;
+}
+.OneBook_img img{
+  width: 100%;
+  height: 100%;
+}
+
+.OneBook .OneBook_categorys{
+font-size:14px;
+color: silver;
+margin-top: 5%;
+}
+.OneBook .OneBook_title{
+  display: -webkit-box;
+  -webkit-line-clamp: 3; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size:24px;
+  margin-top: 5%;
+  width: 80%;
+  height: 90px;
+	
+}
+.OneBook .OneBook_author{
+  display: -webkit-box;
+  -webkit-line-clamp: 3; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size:14px;
+  color: silver;
+  margin-top: 2%;
+  }
+
+  .preloader {
+    /* координаты положения */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #e0e0e000;
+  }
+  
+  .preloader__row {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: 35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+  }
+  
+  .preloader__item {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    background-color: #337ab7;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    animation: preloader-bounce 2s infinite ease-in-out;
+  }
+  
+  .preloader__item:last-child {
+    top: auto;
+    bottom: 0;
+    animation-delay: -1s;
+  }
+  
+  @keyframes preloader-rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes preloader-bounce {
+  
+    0%,
+    100% {
+      transform: scale(0);
+    }
+  
+    50% {
+      transform: scale(1);
+    }
+  }
+  
+  .loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+  }
+  
+  .loaded .preloader {
+    display: none;
+  }
+
+  #loadMore{
+    width: 80%;
+    margin:2px auto;
+    margin-bottom: 2%;
+  }
+  #loadMore button{
+    margin-left:30%;
+    width: 40%;
+    height: 35px;
+    font-size: 20px;
+  }
+
+  #pageBook{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 10% auto;
+  }
+  #textPageBook{
+    width: 50%;
+  }
+  #categoryPageBook{
+    width: 50%;
+    font-size: 14px;
+  }
+  #mainTextPageBook{
+    margin-top: 2%;
+    font-size: 25px;
+    width: 100%;
+  }
+  #authorPageBook{
+    width: 50%;
+    margin-top: 2%;
+    font-size: 14px;
+    color:silver;
+  }
+  #directionPageBook{
+    width: 80%;
+    margin-top: 5%;
+    font-size: 20px;  
+  }
+
+  @media screen and (max-width:576px) {
+    #pageBook{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      margin: 10% auto;
+    }
+    #textPageBook{
+      width: 90%;
+      margin-top: 10%;
+    }
+  }
