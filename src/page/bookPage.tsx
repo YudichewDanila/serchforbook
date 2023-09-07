@@ -15,6 +15,8 @@ const BookPage = ()=>{
 return(
     <>
     <div id='pageBook'>
+        {Object.keys(Book).length < 1?
+        <div>Страница книги</div>}
         <div id='imgPageBook'>
         <img width='200px'  src={Book?.volumeInfo?.imageLinks?.smallThumbnail?Book?.volumeInfo?.imageLinks?.smallThumbnail:'/img/noPicture.png'} alt={'Изображение для книги: '+Book?.volumeInfo?.title} ></img>
             
